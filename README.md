@@ -38,7 +38,8 @@ Step by step to setup:
 
 ## Sample run
 
-very simple in-line form (did not add more design)
+-Very simple in-line form (did not add more design)
+-For numerical inputs,only shows near value
 
 ![CFS-Manual-Test](https://github.com/Patreesza/car-filter-system/assets/35329479/9e446ded-c857-4e4d-9ff7-021bb369e123)
 
