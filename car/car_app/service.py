@@ -28,11 +28,17 @@ class CarListService:
         qvmx = Q()
         if data["velocity_max"]:
             qvmx = Q(velocity__lte=data["velocity_max"])
-
+        # Weight
+        qwgmn = Q()
+        if data["weight_min"]:
+            qwgmn = Q(weight__gte=data["weight_min"])
+        qwgmx = Q()
+        if data["weight_max"]:
+            qwgmx = Q(weight__lte=data["weight_max"])
         q = (
             Q(name__icontains=data.get("name", ""))
             & Q(color__icontains=data.get("color", ""))
-        ) | (Q(qlmn & qlmx) & Q(qwmn & qwmx) & Q(qvmn & qvmx))
+        ) | (Q(qlmn & qlmx) & Q(qwmn & qwmx) & Q(qvmn & qvmx) & Q(qwgmn & qwgmx))
 
         qs = CarModel.objects.filter(q)
         return qs
