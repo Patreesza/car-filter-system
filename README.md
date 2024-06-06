@@ -40,4 +40,4 @@ Step by step to setup:
 
 Patreesza Marie Pantojan
 [@Patreesza](https://github.com/Patreesza)
-[LinkedIn @Patreesza](https://www.linkedin.com/in/patreesza-marie-pantojan/)
+[LinkedIn](https://www.linkedin.com/in/patreesza-marie-pantojan/)
