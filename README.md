@@ -36,7 +36,9 @@ Step by step to setup:
 - Run Django server `python car/manage.py runserver` 
 
 
-## Sample run 
+## Sample run
+
+very simple in-line form (did not add more design)
 
 ![CFS-Manual-Test](https://github.com/Patreesza/car-filter-system/assets/35329479/9e446ded-c857-4e4d-9ff7-021bb369e123)
 
