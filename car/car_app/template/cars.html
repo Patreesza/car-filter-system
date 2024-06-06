@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--base-->
+    <html lang="en">
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/static/base.css">
+
+    <body>
+        <!--content-->
+
+        <div class="container">
+            <h3>Welcome! search a car based on your preferred criteria. </h3>
+
+            <div class="">
+                <form class="form-inline" action="#" method="post">
+                    {% csrf_token %}
+                    {{ car_search_form }}
+                    <br><br>
+
+                    <div align="center">
+                        <input type="submit" name="search" value="SEARCH" />
+                        <input type="submit" name="export" value="EXPORT RESULT" />
+                    </div>
+                </form>
+            </div><br><br>
+
+            <!--Form-->
+            {% if form.errors %}
+                {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.errors }}
+                    {{ field.label_tag }} {{ field }}
+                    {% if field.help_text %}
+                    <p class="help" id="{{ field.auto_id }}_helptext">
+                        {{ field.help_text|safe }}
+                    </p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            {% endif %}
+
+            <!--list-->
+            <ul class="responsive-table">
+              <li class="table-header">
+                <div class="col col-3">Name</div>
+                <div class="col col-1">Length (mm)</div>
+                <div class="col col-1">width (mm) </div>
+                <div class="col col-1">Weight (kg)</div>
+                <div class="col col-1">Velocity (m/s) </div>
+                <div class="col col-3">Color</div>
+              </li>
+              {% for car in object_list %}
+                <li class="table-row">
+                    <div class="col col-3" data-label="Name">{{car.name}}</div>
+                    <div class="col col-1" data-label="Length">{{car.length}}</div>
+                    <div class="col col-1" data-label="width">{{car.width}}</div>
+                    <div class="col col-1" data-label="Weight">{{car.weight}}</div>
+                    <div class="col col-1" data-label="Velocity">{{car.velocity}}</div>
+                    <div class="col col-3" data-label="Color">{{car.color}}</div>
+                </li>
+              {% endfor %}
+            </ul>
+
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li class="{{ message.tags }}">
+                            <h4 class="alert-success text-center" style="padding-top: 5px; padding-bottom: 5px;">
+                                {{ message }}
+                            </h4>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        
+
+        <!--content-->
+    </body>
+<!--base-->
+</html>

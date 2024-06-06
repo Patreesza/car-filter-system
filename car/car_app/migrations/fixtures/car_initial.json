@@ -1,0 +1,134 @@
+[
+    {
+      "model": "car_app.carmodel",
+      "pk": 1,
+      "fields": {
+        "name": "Acadia",
+        "length": "4000",
+        "width": "3470",
+        "weight": "1500",
+        "velocity": "20.5",
+        "color": "BLACK"
+      }
+    },
+    {
+        "model": "car_app.carmodel",
+        "pk": 2,
+        "fields": {
+          "name": "Blazer",
+          "length": "4356",
+          "width": "3165",
+          "weight": "2600",
+          "velocity": "30",
+          "color": "BLUE"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 3,
+        "fields": {
+          "name": "Bolt EV",
+          "length": "3000",
+          "width": "2500",
+          "weight": "1500",
+          "velocity": "26",
+          "color": "GOLD"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 4,
+        "fields": {
+          "name": "Carnival",
+          "length": "4500",
+          "width": "2890",
+          "weight": "3451",
+          "velocity": "36",
+          "color": "ORANGE"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 5,
+        "fields": {
+          "name": "Compass CLS",
+          "length": "3200",
+          "width": "2500",
+          "weight": "1890",
+          "velocity": "32.56",
+          "color": "WHITE"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 6,
+        "fields": {
+          "name": "Durango",
+          "length": "5856",
+          "width": "4000",
+          "weight": "3400",
+          "velocity": "37.34",
+          "color": "BEIGE"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 7,
+        "fields": {
+          "name": "EV9",
+          "length": "4519",
+          "width": "3893",
+          "weight": "2566",
+          "velocity": "28.7",
+          "color": "YELLOW"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 8,
+        "fields": {
+          "name": "Forte F8",
+          "length": "4367",
+          "width": "3458",
+          "weight": "2768",
+          "velocity": "20",
+          "color": "BLACK"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 9,
+        "fields": {
+          "name": "Hornet",
+          "length": "5300",
+          "width": "4678",
+          "weight": "2998",
+          "velocity": "34.1",
+          "color": "RED"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 10,
+        "fields": {
+          "name": "Alohoam",
+          "length": "7100",
+          "width": "5643",
+          "weight": "6002",
+          "velocity": "35.6",
+          "color": "GRAY"
+        }
+      },
+      {
+        "model": "car_app.carmodel",
+        "pk": 11,
+        "fields": {
+          "name": "Jetta GLA",
+          "length": "3900",
+          "width": "3109",
+          "weight": "2098",
+          "velocity": "24.98",
+          "color": "WHITE"
+        }
+      }
+  ]
