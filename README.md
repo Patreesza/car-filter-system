@@ -38,8 +38,6 @@ Step by step to setup:
 
 ## Sample run 
 
-Manual Test:
-
 ![CFS-Manual-Test](https://github.com/Patreesza/car-filter-system/assets/35329479/9e446ded-c857-4e4d-9ff7-021bb369e123)
 
 Unit test result: 
